@@ -16,5 +16,6 @@ fi
 sudo -u git mkdir -p "$REPO_PATH"
 cd "$REPO_PATH"
 sudo -u git git init --bare
+sudo -u git git config http.receivepack true
 
 echo "Repository $REPO_NAME created at $REPO_PATH"
